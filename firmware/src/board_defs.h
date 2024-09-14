@@ -5,9 +5,9 @@
 
 #if defined BOARD_MAI_PICO
 
-#define I2C_PORT i2c1
-#define I2C_SDA 6
-#define I2C_SCL 7
+#define I2C_PORT i2c0
+#define I2C_SDA 16
+#define I2C_SCL 17
 #define I2C_FREQ 400*1000
 
 #define RGB_PIN 13
@@ -15,7 +15,7 @@
 #define RGB_BUTTON_MAP { 5, 4, 3, 2, 1, 0, 7, 6, 8, 9, 10, 11 }
 
 /* 8 main buttons, Test, Service, Navigate, Coin */
-#define BUTTON_DEF { 1, 0, 4, 5, 8, 9, 3, 2, 12, 11, 10, 14 }
+#define BUTTON_DEF { 20, 21, 22, 23, 24, 25, 26, 27, 12, 13, 14, 15 }
 
 /* HID Keycode: https://github.com/hathach/tinyusb/blob/master/src/class/hid/hid.h */
 // P1: WEDCXZAQ3(F1)(F2)(F3) P2: (Numpad)89632147*(F1)(F2)(F3)
