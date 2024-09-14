@@ -22,6 +22,8 @@
 #define SENSE_LIMIT_MAX 9
 #define SENSE_LIMIT_MIN -9
 
+static uint8_t touch_map[] = TOUCH_MAP;
+
 static void disp_rgb()
 {
     printf("[RGB]\n");

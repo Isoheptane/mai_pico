@@ -160,7 +160,7 @@ const uint16_t *touch_raw()
     uint16_t buf[36] = {0};
 
     for (int i = 0; i < 3; i++) {
-        sensor_ok[i] = mpr121_raw(MPR121_BASE_ADDR + i, buf + i * 12, 12);
+        sensor_ok[i] = mpr121_raw(MPR121_BASE_ADDR + i, readout + i * 12, 12);
     }
     memcpy(readout, buf, sizeof(readout));
 
